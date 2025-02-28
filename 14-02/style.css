@@ -1,16 +1,45 @@
 .minha-navbar {
-    background-color: #6bc181;
+    background-color: #78bf88;
 }
 
 .nav-link {
     color: black;
 }
 
+
+footer {
+    background-color: #8ecd9b;
+}
+
 .meu-icone:hover {
-    color: #6bc181;
+    color: white;
 }
 
 
 .img_logo{
     height: 10%;
+}
+
+body {
+    font-family: "Bodoni MT", sans-serif;
+}
+
+
+p {
+    font-family: "Georgia",  sans-serif;;
+    font-size: 16px;
+    color: black;
+}
+
+.logar {
+    background-color: #50a55d;
+}
+
+
+.logar:hover {
+    background-color: #4fcd67;
+}
+
+.nav-link:hover {
+  color: white;
 }
