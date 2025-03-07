@@ -27,57 +27,59 @@
         <li class="nav-item m-2"><a class="nav-link" href="Contato.html">Contato</a></li>
     </ul>
 </nav>
+<h1 class="cadastro ms-4 mt-4">Cadastro</h1>
 <form class="row g-3 m-3">
   <div class="col-md-6">
-    <label for="inputName" class="form-label">Nome</label>
-    <input type="email" class="form-control" id="inputName">
+    <label id="nome" onmousedown="nomeAparecer()" class="form-label">Nome</label>
+    <input id="input_nome" onmousedown="nomeColor()" type="text" class="form-control">
   </div>
 
   <div class="col-md-6">
-    <label for="inputlastname" class="form-label">Sobrenome</label>
-    <input type="email" class="form-control" id="inputLastname">
+    <label id="sobrenome" onmousedown="sobrenomeAparecer()" class="form-label">Sobrenome</label>
+    <input id="input_sobrenome" onmousedown="sobrenomeColor()" type="text" class="form-control">
   </div>
 
   <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
+    <label id="email" onmousedown="emailAparecer()" class="form-label">Email</label>
+    <input id="input_email" onmousedown="emailColor()" type="email" class="form-control">
   </div>
 
   <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Senha</label>
-    <input type="password" class="form-control" id="inputPassword4">
+    <label id="senha" onmousedown="senhaAparecer()" class="form-label">Senha</label>
+    <input id="input_senha" onmousedown="senhaColor()" type="password" class="form-control">
   </div>
 
   <div class="col-4">
-    <label for="inputCell" class="form-label">Telefone</label>
-    <input type="text" class="form-control" id="inputCell">
+    <label id="telefone" onmousedown="telefoneAparecer()" class="form-label">Telefone</label>
+    <input id="input_telefone" onmousedown="telefoneColor()" type="text" class="form-control">
   </div>
 
   <div class="col-12">
-    <label for="inputAddress" class="form-label">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress">
+    <label id="endereco" onmousedown="enderecoAparecer()" class="form-label">Endereço</label>
+    <input id="input_endereco" onmousedown="enderecoColor()" type="text" class="form-control">
   </div>
 
   <div class="col-md-6">
-    <label for="inputCity" class="form-label">Cidade</label>
-    <input type="text" class="form-control" id="inputCity">
+    <label id="cidade" onmousedown="cidadeAparecer()" class="form-label">Cidade</label>
+    <input id="input_cidade" onmousedown="cidadeColor()" type="text" class="form-control">
   </div>
 
   <div class="col-md-4">
-    <label for="inputState" class="form-label">Estado</label>
-    <select id="inputState" class="form-select">
+    <label id="estado" class="form-label">Estado</label>
+    <select onmousedown="estadoColor()" class="form-select">
       <option selected>...</option>
       <option>São paulo</option>
     </select>
   </div>
 
   <div class="col-md-2">
-    <label for="inputZip" class="form-label">CEP</label>
-    <input type="text" class="form-control" id="inputZip">
+    <label id="cep" onmousedown="cepAparecer()" class="form-label">CEP</label>
+    <input id="input_cep" onmousedown="cepColor()" type="text" class="form-control">
   </div>
 
   <div class="col-12">
     <button type="submit" class="btn logar">Logar</button>
+    <button onclick="limparInput()" class="btn logar ms-2">Limpar</button>
   </div>
 
 </form>
@@ -92,6 +94,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-
              YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- NÃO PODE TER NADA DEPOIS DO SCRIPT -->
+
+<script src="modificacoes.js"></script>
 
 </body>
 </html>
