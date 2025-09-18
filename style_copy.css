@@ -1,0 +1,77 @@
+#list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+#spinner {
+    display: none;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border:  4px solid transparent;
+    border-top: 4px solid white;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+
+.error {
+    color: red;
+}
+
+
+.card {
+    border: 1px solid black;
+    background-color: darkgrey;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 8px 5px;
+    width: 200px;
+    align-items: center;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+p > strong {
+    color:  white;
+}
+
+
+h1 {
+    margin: 25px;
+}
+
+
+.btn-custom {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: black;
+}
+
+
+input, textarea, button {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+
+pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 6px;
+}
